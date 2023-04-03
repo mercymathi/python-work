@@ -1,0 +1,77 @@
+1)s=0
+for num in range (10,22,2):
+    s=s+num
+    print(num)
+    
+
+ex=[1,2,3,4]
+
+2)for i in range (len(ex)):
+    ex[i]=ex[i]**2
+    print(ex)
+
+3)li=[25,67,88,45,75]
+n=0
+count=0
+for i in li:
+    n=n+i
+    count=count+1
+ave = (n/count)
+print(n)
+print(ave)
+
+4)a=0
+for i in range(10,52,2):
+    if i%2==0:
+        a=a+i
+        print(i)
+
+5)stng='python'
+count=0
+for i in strng:
+    if i=='p':
+count=count+1
+print(i)
+
+6)list=[1,2,3,4,5]
+
+for i in list:
+    list=i+list
+    print(i)
+
+7)val=int(input("enter the number:"))
+n=1
+for i in range(1,val+1):
+n=n*i
+
+print(val,n)
+
+8)strn_1=input("enter:")
+for i in strn_1:
+    if i.isupper():
+        print(i.lower())
+    elif i.lower():
+        print(i.upper())
+    else:
+        ("special character found")
+
+9)vovw = ["a","e","i","o","u"]
+c_vow= 0
+c_con = 0
+for i in vow:
+        c_vow = c_vow+1
+    else:
+        c_con=c_con+1
+print(c_vow)
+print(c_con)
+
+10)n= 0
+c= 0
+for i in range(0,5):
+val = int(input("number: "))
+    if 15 <= val <= 30:
+    sum = sum + val
+    else:
+    c = c + 1
+print(sum)
+print(c)

@@ -1,0 +1,72 @@
+1)input cost price, input desired profit percentage find selling price
+ sp--->selling price
+cp---->cost price
+sp = CP + (CPxprofit percentage)
+
+2)Input the product price,qty,Gst in percentage find the total amount
+ of the the product
+ 
+3)Input 2 numbers check the relation ship between those numbers
+ex: Input_1 = 86
+    Input_2 = 47
+Input_1 > Input_2 ----True
+check for all condition
+
+4)Input 6 Subjects Marks find the total Marks,and Percentage
+5)Based on user input Height and Weight calculate BMI 
+BMI(Body Mass Index)
+
+BMI  = Weight/Height^2
+
+
+
+
+
+
+
+1.cp= int(input("enter cost price:"))
+pc= int(input("enter profit percentage:"))
+sp=(print(cp+(cp*pc/100)))
+
+2.product_price= int(input("enter the exact price:"))
+quantity_of_the_product= int(input("enter the quantity of the product:"))
+gst=int(input("enter the gst in percentage:"))
+gst_calc=(gst/100)
+print (gst_calc)
+gst_amt = (product_price*(gst/100))
+print (gst_amt)
+total_amount= (product_price+gst_amt)
+print(total_amount)
+
+3.p1=int(input("enter value1:"))
+p2=int(input("enter value2:"))
+x=p1>=p2
+y=p1+p2
+z=p1!=p2
+a=p1==p2
+b=p1<p2
+c=p1*p2
+
+print(x)
+print(y)
+print(z)
+print(a)
+print(b)
+print(c)
+
+4.maths=int(input("enter sub1:")) 
+tamil=int(input("enter sub2:"))
+social=int(input("enter sub3:"))
+science=int(input("enter sub4:"))
+english=int(input("enter sub5:"))
+totl_mrks = (maths+tamil+social+science+english)
+print (totl_mrks)
+perctg=(totl_mrks/500*100)
+print (perctg)
+
+5.user1_height=int(input("height:"))
+user2_weight=int(input("weight:"))
+BMI= (user2_weight/(user1_height/100)**2)
+print (BMI)
+
+

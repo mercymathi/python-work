@@ -1,0 +1,81 @@
+1) Input any number find out is it single digit or double digit or triple digit number ex input is 22 print two digit number
+2) find the greatest of 3 numbers
+3)Calculte BMI based value display the conditions.
+4)write a program to display a)shortilisted for Bsc maths when puc avg>50,pcm_avg>70,maths>75 
+b)when puc avg>50,pcm_avg<70 then display not eligible for B.Sc Maths(H), try for B.Sc General 
+c)when puc avg< 50 then display not eligible for any course in this college
+5) enter the state name and capital name based on the choice of state display the capital name
+
+
+1) num1 = int(input("enter the number:"))
+if num1<10:
+    print("single digit number")
+elif num1==10 or num1<100:
+    print("two digit number")
+elif num1==100 or num1<1000:
+    print("three digit number")
+else:
+    print("it doesnt belong to one,two,three digit number")
+
+2) val1= int(input("enter the number:"))
+val2= int(input("enter the number:"))
+val3= int(input("enter the number:"))
+
+if val1>val2 and val1>val3:
+    print("one")
+elif val2>val3 and val2>val1:
+    print("two")
+elif val3>val1 and val3>val2:
+    print("three")
+else:
+    print("no")
+    
+3) height=float(input("height:"))
+weight=float(input("weight:"))
+BMI= weight/(height/100)**2
+print(BMI)
+if BMI<18.5:
+    print ("lean")
+elif (18.5<= BMI <=24.9):
+    print("normal")
+elif (24.9<= BMI <=29.9):
+    print("overweight")
+elif (30<= BMI <=34.9):
+    print("obese")
+else:
+    print("visit a doctor")
+
+4) puc1= int(input("enter the mark:"))
+puc2= int(input("enter the mark:"))
+average1=(puc1+puc2)/2
+print(average1)
+py=int(input("enter the mark:"))
+che=int(input("enter the mark:"))
+mat=int(input("enter the mark:"))
+pcm=(py+che+mat)/3
+
+print(pcm)
+if average1>50 and pcm>70 and mat>75:
+    print("shortlisted for bsc maths (H)")
+elif average1>50 and pcm<70:
+    print("not eligible for bsc maths (H),eligible for bsc general")
+elif average1<50:
+    print("not eligible for any course in this college")
+else:
+    print("try another college")
+
+5) state=input("enter the state name:")
+if state=="tamilnadu":
+    print("the capital is tamilnadu is chennai")
+elif state=="karnataka":
+    print("the capital is tamilnadu is",state)
+elif state=="kerala":
+    print("the capital is tamilnadu is",state)
+elif state=="andrapradesh":
+    print("the capital is tamilnadu is",state)
+elif state=="telangana":
+    print("the capital is tamilnadu is",state)
+else:
+    print("you are out of the third planet")
+
+

@@ -1,0 +1,111 @@
+1)ex_users= ['alia','madonna']
+user_nm= input("Username: ")
+if(user_nm not in ex_users):
+    password = input("Create password : ")
+    if password.isalnum() and len(password) > 8:
+        print("user name an password created succesfully")
+       else:
+        print("you have inserted special characters,please use only numbers and alphabets")
+else:
+    print("existing user name ,try again")
+
+2)person age
+0-14 - children
+15-24 - youth
+25-64 - adult
+65 > senior citizen
+Display the value based on age
+
+3)person_age = int(input("enter the age:"))
+if 0<=person_age<=14:
+    print("children")
+elif 15<=person_age<=24:
+    print("youth")
+elif 25<=person_age<=64:
+    print("adult")
+elif person_age>=65:
+    print("senior citizen")
+else:
+    print("please enter a valid age")
+    
+3)input the gross salary of the employee per month
+    given tax to be computed is as following 
+    salary above 70000 then tax is 14.5%
+    salary above 50000 but less than 70000 then tax is 10.5%
+    salary above 35000 but less than 50000 then tax is 7.5%
+
+    net salary = gross salary - tax
+    display the net salary after the tax is computed and dedcuted.
+
+
+4)gross_salary = int(input("enter the salary:")) 
+if gross_salary>=35000 and gross_salary<50000:
+    net_salary= ((gross_salary)-gross_salary*(7.5/100))
+    print("tax deducted is 7.5%,and the net_salary is",net_salary)
+elif gross_salary>=50000 and gross_salary<70000:
+    net_salary= ((gross_salary)-gross_salary*(10.5/100))
+    print("tax deducted is 10.5%,and the net_salary is",net_salary)
+elif gross_salary>=70000:
+    net_salary= ((gross_salary)-gross_salary*(10.5/100))
+    print("tax deducted is 14.5%,and the net_salary is",net_salary)
+else:
+    print("your salary is below 35000")
+
+5)s=input()
+if input.isupper(): 
+    print("capital")
+elif input.islower():
+    print("lower")
+elif 0<=input<=9:
+    print("number")
+else:
+    print("special character")
+
+
+6)m =int(input('enter the number:'))
+if m>=100 or m>=999:
+    print("three digit number")
+    if m%5==0 and m%7==0:
+        print("m is divisible by 5 and 7")
+    else:
+        print("m is not divisible by 5 and 7")
+else:
+    print("not a three digit number")
+
+
+
+
+
+7)sal_com = int(input("enter the amount:"))  
+if sal_com>=50000 and sal_com<=60000:
+    com=((sal_com)*3/100)
+    print("the sales commission for 6.5% amount is",com)
+elif sal_com>=60000 and sal_com<=78000:
+    com=((sal_com)*4/100)
+    print("the sales commission for 4% amount is",com)
+elif sal_com>=78000 and sal_com<=100000:
+    com=((sal_com)*5/100)
+    print('the sales comission for 5% amount is',com)
+elif sal_com>=100000:
+    com=((sal_com)*6.5/100)
+    print('the sales commission for 6.5% is',com)
+else:
+    print("there is no commission percentage")
+
+
+
+8)item_type=input("enter the item:")
+cost_pr=int(input("enter the cp:" ))
+if item_type =="A":
+    sp=cost_pr+(cost_pr*(10/100))
+    print("the sp is:",sp)
+elif item_type =="B":
+    prof_per=(13/100)
+    sp= cost_pr+(cost_pr*(13/100))
+    print("the sp is:",sp)
+elif item_type =="C":
+    prof_per=(15.5/100)
+    sp= cost_pr+(cost_pr*(1/100))
+    print("the sp is:",sp)
+else:
+    print("no item available")

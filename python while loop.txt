@@ -1,0 +1,92 @@
+1)start = 15
+end =25
+
+while end >= start:
+    print(start)
+    start=start+1
+
+
+2)ec=0
+oc=0
+sum=0
+while sum<0:
+    num=int(input("enter the number"))
+    if num%2==0:
+        ec+=1
+    else:
+        oc+=1
+        sum+=1
+    print("en",ec)
+    print("oc",oc
+
+3)fivn=0
+i=0
+while i<0:
+    num=int(input("enter the number"))
+    if num%5==0:
+        fivn=fivn+num
+        i+=1
+        print(fivn)
+    else:
+        print("not divisible by 5")
+
+
+
+4)sub1=int(input("enter the mark"))
+sub2=int(input("enter the mark"))
+sub3=int(input("enter the mark"))
+sub4=int(input("enter the mark"))
+sub5=int(input("enter the mark"))
+tot_avg = (sub1+sub2+sub3+sub4+sub5)/5
+i=0
+while i<0:
+    if sub1<35 or sub2<35 or sub3<35 or sub4<35 or sub5<35:
+        print("failed",tot_avg)
+        i+=1
+    else:
+        print("pass")
+
+
+5)num=[43,67,55,77,98]
+if num<=25 and num>=75:
+    print(sum(num))
+else:
+    print("not in range of 25 to 75")
+
+6)vow=['a','e','z','d','w']
+i=0
+while i<0:
+    if vow==['a','e','i','o','u']:
+    i+=1
+    print("it is vowels")
+else:
+    print("consonants")
+
+7)input=input("enter:")
+i=0
+while i<len(input):
+    if(input.islower()):
+        print(input.upper())
+    else:
+        print(input.lower())
+        i+=1
+
+
+8)user_in=int(input("enter the value:"))
+i=0
+while i<=10:
+    print(user_in*i)
+    i+=1
+
+
+9)input=int(input("enter the number:"))   
+i=0
+while i<0:
+    i=i*input
+    input=input-1
+print(i)
+
+
+10)a="mercy"[::-1]
+print(a)
+        
